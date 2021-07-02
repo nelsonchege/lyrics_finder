@@ -1,7 +1,7 @@
 import lyricsgenius
 
 from database import insert_data
-from main_file import main
+#from main_file import main
 from play_song import play_music
 
 
@@ -31,12 +31,13 @@ def get_lyrics(art, son):
                 data = [art, son, single_lyrics]
                 insert_data(data)
             except:
-                print("nikubaya ...you are close")
+                print("")
         elif selected_option == 2:
             son1 = son.replace(" ", "")
             play_music(son1)
         elif selected_option == 3:
-            main()
+            #main()
+            print("katambe")
         else:
             exit()
     except:
@@ -58,7 +59,8 @@ def get_lyrics(art, son):
             play_music(playable)
         if selected_option == 2:
             # takes user to the main menu
-            main()
+            #main()
+            print("katambe")
         else:
             # closes the program
             exit()

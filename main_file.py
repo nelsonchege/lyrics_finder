@@ -53,6 +53,7 @@ def main():
     elif selected_option == 2:
         # this method from database file display data stored in data base
         select_data()
+        main()
     elif selected_option == 3:
         # this opens youtube to play a song user inputs
         print("what do you want to listen to:")
