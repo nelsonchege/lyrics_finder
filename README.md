@@ -1,3 +1,4 @@
+![Project Name (1)](https://user-images.githubusercontent.com/68642235/124352609-f0efdd00-dc09-11eb-95c7-a888907ca5f8.gif)
 # lyrics_finder
 this is a simple python python program that uses the genius.com com API to find  the lyrics to a song.and have the ability to store the lyrics of the song you just searched for.the program can also directly play music on youtube without veiwing the lyrics of the song 
 ## how does it work
