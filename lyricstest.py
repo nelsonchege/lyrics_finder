@@ -20,11 +20,25 @@ def get_songs():
     assert num
 
 
-def selected_option():
-    selected_option = int(input("menu:"
-                                " \n 1. search  \n 2. view saved  \n 3. exit \n"
-                                ))
-    assert selected_option
+def format_data_for_display(example_people_data):
+    pass
+
+
+def test_format_data_for_display(example_people_data):
+    assert format_data_for_display(example_people_data) == [
+        "Alfonsa Ruiz: Senior Software Engineer",
+        "Sayid Khan: Project Manager",
+    ]
+
+
+def format_data_for_excel(example_people_data):
+    pass
+
+def test_format_data_for_excel(example_people_data):
+    assert format_data_for_excel(example_people_data) == """given,family,title
+Alfonsa,Ruiz,Senior Software Engineer
+Sayid,Khan,Project Manager
+"""
 
 
 def menu():

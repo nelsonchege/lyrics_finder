@@ -3,6 +3,7 @@ from artist_songs import artist_songs
 from database import select_data
 from play_song import play_music
 
+
 # initioate the main method for the whole project
 def main():
     # select variable is used to navigate through menu which has four options
@@ -65,8 +66,10 @@ def main():
     else:
         exit()
 
+
 # prints welcome message when you first run it
 print("welcome to lyrics finder")
 print("N/B check spelling for song name")
 # calling the  main method to start the program
+
 main()

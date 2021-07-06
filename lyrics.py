@@ -1,7 +1,6 @@
 import lyricsgenius
 
 from database import insert_data
-#from main_file import main
 from play_song import play_music
 
 
@@ -20,47 +19,33 @@ def get_lyrics(art, son):
         print("\n =========================================== \n")
         # displays a menu for the user for what to do next after getting the lyrics
         selected_option = int(input("options:"
-                                    " \n 1. save \n 2. play  \n 3. back to menu \n 4. exit \n"
+                                    " \n 1. save \n 2. play  \n 3. exit \n"
                                     ))
-        while selected_option < 1 or selected_option > 4:
+        while selected_option < 1 or selected_option > 3:
             selected_option = int(input("options between 1 and 3:"
-                                        " \n 1. save \n 2. play music  \n 3. back to menu \n 4. exit \n"
+                                        " \n 1. save \n 2. play music  \n 3. exit \n"
                                         ))
         if selected_option == 1:
             try:
                 data = [art, son, single_lyrics]
                 insert_data(data)
             except:
-                print("")
+                print("45")
         elif selected_option == 2:
             son1 = son.replace(" ", "")
             play_music(son1)
-        elif selected_option == 3:
-            #main()
-            print("katambe")
         else:
             exit()
     except:
         # this execute when no lyrics is found in lyricsgenius database
         print("\n =========================================== \n")
-        print("sorry lyrics not found in  genius.com database 😭😭 ")
-        selected_option = int(input("options:"
-                                    " \n 1. play music via youtube \n 2. back to menu \n 3. exit \n"
+        print("sorry lyrics not found !!!")
+        selected_option = int(input(
+                                    " \n 1. exit \n"
                                     ))
-        while selected_option < 1 or selected_option > 3:
-            selected_option = int(input("options between 1 and 3:"
-                                        " \n 1. play music via youtube\n 2. back to menu \n 3. exit \n"
+        while selected_option < 1 or selected_option > 1:
+            selected_option = int(input(" only options 1 :"
+                                        " \n 1. exit \n"
                                         ))
-        if selected_option == 1:
-            # plays music using function from play_song
-            art1 = art.replace(" ", "")
-            son1 = son.replace(" ", "")
-            playable = son1 + art1
-            play_music(playable)
-        if selected_option == 2:
-            # takes user to the main menu
-            #main()
-            print("katambe")
-        else:
-            # closes the program
+
             exit()
