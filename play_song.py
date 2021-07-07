@@ -14,4 +14,5 @@ def play_music(music_name):
     video_ids = re.findall(r"watch\?v=(\S{11})", html.read().decode())
     video_link = "https://www.youtube.com/watch?v=" + video_ids[0]
     # opens youtube on chrome using webbrowser module
-    return webbrowser.open(video_link)
+    response='successful'
+    return webbrowser.open(video_link),response

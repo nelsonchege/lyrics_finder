@@ -41,16 +41,20 @@ Sayid,Khan,Project Manager
 """
 
 
-def menu():
-    while selected_option < 1 or selected_option > 3:
-        selected_option = 3
-    assert selected_option
+def test_lyrics():
+    user = get_lyrics.test_lyrics()
+    return user
+
+def get_lyrics():
+
+    assert get_lyrics.test_music('moneybagg yo','time today')== 'successful'
 
 
-def song_list():
-    art = "john legend"
-    list = artist_songs(art)
-    assert list
+def test_musics(play_musics=None):
+    user_table = play_musics.test_music()
+    return user_table
 
+def get_lyrics():
 
+    assert get_lyrics.test_musics('moneybagg yo')== 'successful'
 

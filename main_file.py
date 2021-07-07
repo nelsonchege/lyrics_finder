@@ -45,6 +45,7 @@ def main():
             art = input("please enter artist name:")
             sonn = int(input("number of song you want:"))
             artist_songs(art, sonn)
+
         if selected_option_2 == 3:
             # this loads the main function restarting the program
             main()

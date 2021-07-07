@@ -36,6 +36,8 @@ def get_lyrics(art, son):
             play_music(son1)
         else:
             exit()
+        response ='successful'
+        return response
     except:
         # this execute when no lyrics is found in lyricsgenius database
         print("\n =========================================== \n")
@@ -49,3 +51,4 @@ def get_lyrics(art, son):
                                         ))
 
             exit()
+        response = 'failed'

@@ -12,5 +12,8 @@ def artist_songs(art, son):
         # used method .search_artist from lyricsgenius to get all song of the artist
         artist = genius.search_artist(art, max_songs=son, sort="title")
         print(artist.songs)
+        response='complete'
+        return response
     except:
         print("no result found")
+        response = 'failed'
